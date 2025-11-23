@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>R&Z Strore</title>
+  <link rel="stylesheet" href="estilo/estilo.css">
+  
+</head>
+<body>
+
+    <div class="cabecera">
+        <div class="cabeceraLeft">
+            <img src="img/rz.png" width="30%" height="15%">
+        </div>
+        
+        <div class="cabeceraRigth">
+           
+              <ul class="menus">
+               <li>
+                <a href="pagina.html"> <img src="img/inicio.png" width="5%" height="30px">Inicio</a>
+              </li>
+                <li><a href="nosotros.html"><img src="img/nosotros.png" width="5%" height="30px">Nosotros</a>
+                </li>
+               <li><a href="catalogo.html"> <img src="img/catalogo.png" width="5%" height="30px">Catálogo</a>
+              </li>
+                <li><a href="tendencias.html"><img src="img/tendencia.png" width="5%" height="30px">Tendencias</a>
+                </li>
+                <li><a href="contacto.html"><img src="img/contacto.png" width="5%" height="30px">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+  
+  <style>
+    
+    header { background:#4a188b; color:#fff; text-align:center; padding:20px; 
+    border: 4px solid black;
+    }
+
+    .banner-promocional {
+      background: linear-gradient(90deg, #0cc4c4, #4a188b);
+      color: #fff;
+      text-align: center;
+      padding: 30px 15px;
+    }
+    .banner-promocional h2 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .banner-promocional p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+    .boton-banner {
+      background: #fff;
+      color: #4a188b;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .boton-banner:hover {
+      background: #0cc4c4;
+      color: white;
+    }
+
+    .carrusel {
+      max-width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .carrusel-contenedor {
+      display: flex;
+      animation: desplazamiento 20s linear infinite;
+    }
+    .carrusel img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    @keyframes desplazamiento {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .catalog {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .item {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform .2s;
+    }
+    .item:hover { transform: scale(1.03); }
+    .item img { width: 100%; height: 300px; object-fit: cover; }
+    .info { padding: 15px; }
+    .info h3 { margin: 0 0 10px; font-size: 1.1rem; }
+    .info .price { color: #4a188b; font-weight: bold; font-size: 1.2rem; }
+    .info button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #4a188b;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .info button:hover { background: #0cc4c4; }
+  </style>
+</head>
+<body>
+
+ 
+  <!-- Banner -->
+  <div class="banner-promocional">
+    <h2>🔥 ¡Ofertas Exclusivas por Tiempo Limitado! 🔥</h2>
+    <p>Aprovecha descuentos especiales en tus marcas favoritas. Solo por hoy.</p>
+    <a href="#ofertas" class="boton-banner">Ver Ofertas</a>
+  </div>
+
+  <!-- Carrusel -->
+  <div class="carrusel">
+    <div class="carrusel-contenedor">
+      <img src="img/banner1.png" alt="Banner 1">
+      <img src="img/banner2.png" alt="Banner 2">
+      <img src="img/banner3.png" alt="Banner 3">
+      <img src="img/banner1.png" alt="Banner 1 (repeat)">
+      <img src="img/banner2.png" alt="Banner 2 (repeat)">
+     </div>
+  </div>
+
+  <!-- Catálogo -->
+  <div class="catalog">
+    <!-- Aquie empiezan los productos del catalogo -->
+    <!-- Camisa Casual -->
+    <div class="item">
+      <img src="img/camisa casual.webp" alt="Camisa Casual">
+      <div class="info">
+        <h3>Camisa Casual</h3>
+        <p class="price">S/ 79.99</p>
+        <button>Comprar</button>
+        <button>Volver</button>
+      </div>
+    </div>
+     <!-- Pantalón Denim -->
+    <div class="item">
+      <img src="img/pantalon demin.jpg" alt="Pantalón Denim">
+      <div class="info">
+        <h3>Pantalón Denim</h3>
+        <p class="price">S/ 99.99</p>
+        <button>Comprar</button>
+        <button>Volver</button>
+      </div>
+    </div>
+    <!-- Vestido de Verano -->
+    <div class="item">
+      <img src="img/vestio de verano.webp" alt="Vestido de Verano">
+      <div class="info">
+        <h3>Vestido de Verano</h3>
+        <p class="price">S/ 89.99</p>
+        <button>Comprar</button>
+        <button>Volver</button>
+      </div>
+    </div>
+    <!-- Zapatillas Urbanas -->
+    <div class="item">
+      <img src="img/zapatillas urbanas.webp" alt="Zapatillas Urbanas">
+      <div class="info">
+        <h3>Zapatillas Urbanas</h3>
+        <p class="price">S/ 149.99</p>
+        <button>Comprar</button>
+        <button>Volver</button>
+      </div>
+    </div>
+    <!-- Chaqueta Deportiva -->
+    <div class="item">
+      <img src="img/chaqueta deportiva.webp" alt="Chaqueta Deportiva">
+      <div class="info">
+        <h3>Chaqueta Deportiva</h3>
+        <p class="price">S/ 129.99</p>
+        <button>Comprar</button>
+        <button>Volver</button>
+      </div>      
+    </div>
+      <!-- Polo Basico -->
+    <div class="item">
+      <img src="img/polo basico.webp" alt="Polo Basico">
+      <div class="info">
+        <h3>Polo Basico</h3>
+        <p class="price">S/ 19.99</p>
+        <button>Comprar</button>
+        <button>Volver</button>
+      </div>
+    </div>
+      <!-- Pantalon Cargo -->
+    <div class="item">
+      <img src="img/pantalon cargo.jpg" alt="Pantalon Cargo">
+      <div class="info">
+        <h3>Pantalon Cargo</h3>
+        <p class="price">S/ 49.99</p>
+        <button>Comprar</button>
+        <button>Volver</button>
+      </div>
+    </div>
+      <!-- Camisa de Cuadros -->
+    <div class="item">
+      <img src="img/camisa de cuadros.webp" alt="Camisa de Cuadros">
+      <div class="info">
+        <h3>Camisa de cuadros</h3>
+        <p class="price">S/ 59.99</p>
+        <button>Comprar</button>
+        <button>Volver</button>
+      </div>
+           
+
+  </div>
+   </div>
+
+  <div class="footer">
+      <div class="pie">
+        <div class="pies">
+          <h3>Contacto</h3>
+          <p>📞 +51 999 888 777</p>
+          <p>✉️ contacto@pay.com</p>
+        </div>
+        
+        <div class="pies">
+          <h3>Síguenos</h3>
+        
+            <a href=""><img src="img/facebook.png" alt="" width="15%"> </a>
+            <a href=""><img src="img/redes3.png" alt="" width="15%"> </a>
+            <a href=""><img src="img/linkedin.png" alt="" width="15%"> </a>
+            <a href=""><img src="img/twitter.png" alt="" width="15%"> </a>
+          
+        </div>
+
+        <div class="pies">
+          <h3>Métodos de Pago</h3>
+          <img src="img/visa.png" alt="Visa" width="25%">
+          <img src="img/mastercard.png" alt="Mastercard" width="22%">
+          <img src="img/yape.png" alt="Yape" width="18%">
+          <img src="img/plin.jpeg" alt="Plin" width="18%">
+        </div>
+
+        <div class="pies">
+         <h3>Disfruta de ofertas exclusivas desde tu celular:</h3>
+          <img src="img/googleplay.png" width="15%">
+        
+          <img src="img/appstore.png" width="15%">
+        
+        </div>
+
+        <div class="pies">
+          <h3>📍Ubicación</h3>
+          <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.872025234329!2d-77.04445708909282!3d-12.052325141955594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8cf7f857d4f%3A0xa442b001cf5154c6!2sInstituto%20de%20Educaci%C3%B3n%20Superior%20Tecnol%C3%B3gico%20P%C3%BAblico%20Argentina!5e0!3m2!1ses!2spe!4v1751851100615!5m2!1ses!2spe" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+        <div class="ultimo">
+            <hr class="lineabaja">
+            <p class="ultimo">© 2025 PayLess Tienda de Ropa. Todos los derechos reservados.</p>
+            <p><a href="contacto.html">CONTACTANOS</a></p>
+        </div>
+      
+      
+
+    
+      
+    </div>
+
+
+
+</div>
+  
+</body>
+</html>
+
