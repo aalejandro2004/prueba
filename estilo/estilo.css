@@ -1,0 +1,468 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.cabecera {
+  top: 0;
+  width: 100%;
+  height: 89px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #162066;
+  padding: 11px 25px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.cabeceraLeft {
+  width: 40%;
+  padding: 25px 90px;
+}
+
+.cabeceraRigth {
+  width: 60%;
+  display: flex;
+  justify-content: right;
+  justify-content: center;
+}
+
+.menus {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 0;
+  padding: 0px 20px;
+  font-size: 26px;
+}
+
+.menus li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.menus li a {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menus li img {
+  height: 24px;
+  width: auto;
+}
+
+.menus li a img {
+  margin-right: 8px;
+}
+
+.baner img {
+  width: 100%;
+  height: 100%;
+display: block;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+}
+
+/* TARJETA INFORMACION */
+.tarjeta1 {
+  background-color: #463fc7;
+  padding: 30px 30px;
+}
+
+.tarjeta_total {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 90px;
+  padding: 30px;
+  gap: 60px;
+  background-color: #473f9e;
+}
+
+.tarjeta {
+  padding: 100px 15px;
+  display: flex;
+  align-items: flex-start;
+  border: 2px solid #f05a28;
+  border-radius: 20px;
+  padding: 20px;
+  width: 350px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icono img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.contenido h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contenido p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+.carrusel1 img {
+  margin-right: 55px;
+  
+}
+
+
+.pie {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  background: #162066;
+  gap: 20px;
+  padding: 10px 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pies {
+  width: 33%;
+}
+
+.ultimo {
+  background: #162066;
+  text-align: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.ultimo a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.lineabaja {
+  width: 89%;
+  height: 3px;
+  background-color: #333;
+  border: none;
+  margin: 5px 15;
+}
+
+
+
+.pies a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+.pies li {
+  list-style: none;
+}
+
+.ultimo p {
+  font-weight: bold;
+  font-size: 15px;
+  color: yellow;
+}
+
+/*QUERy 768px */
+@media (max-width: 768px) {
+  body {
+    background-color: #4a188b;
+    margin: 0;
+    padding: 0;
+  }
+
+  .todo {
+    width: 100%;
+  }
+
+    .cabecera {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+         padding: 0px 0px;
+    }
+
+    .cabeceraLeft {
+      width: 40%;
+        display: flex;
+        align-items: center;
+        padding: 0px 0px;
+    }
+
+    .cabeceraLeft img {
+      width: 50%;
+      text-align: center;
+      padding: 15px 20px;
+    }
+
+    .cabeceraRigth {
+      width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 15px;
+    }
+
+    .menus {
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        padding: 0;
+        justify-content: flex-end;
+        font-size: 15px;
+    }
+
+    
+
+    .menus li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 8px;
+        text-align: center;
+        
+    }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .tarjeta_total {
+    flex-direction: column;
+   
+    margin: 20px;
+    padding: 50px;
+    gap: 30px;
+  }
+
+  .tarjeta {
+    width: 100%;
+   
+   padding: 10px 5px;
+  }
+  
+  .carrusel1 img {
+    margin-right: 20px;
+  }
+
+  .lineabaja {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .ultimo p {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+
+  .pie {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    text-align: center;
+  }
+
+    .pies img {
+    width: 50%;
+  }
+.contenido1{  
+    padding: 5px 150px !important;   
+    display: flex ;   
+    flex-direction: column;   
+    justify-items: center ; 
+    gap: 12px ;
+}
+
+
+
+.cajas{
+  font-size: 30px;
+}
+
+.mapa{
+  width: 100% !important;
+  height: 200px !important;
+}
+
+}
+/* QUER 480px */
+@media (max-width: 480px) {
+  body {
+    background-color: #4a188b;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cabecera {
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    z-index: 100;
+    gap: 10px     ;
+  }
+
+  .cabeceraLeft {
+  width: 25%;
+  }
+
+  .cabeceraLeft img {
+   width: 1200px !important;
+   height: 85px !important;
+  
+  }
+
+  .cabeceraRigth {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  .menus {
+    display: flex;
+    flex-direction: row;
+    
+  }
+.menus img{
+ width: 100% !important;
+max-width: 15px
+}
+.cabeceraRigth   li {
+  font-size: 7px;
+  gap: 150px;
+}
+
+  .container {
+    flex-direction: column;
+  }
+
+  .tarjeta_total {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    margin: 20px 10px;
+    padding: 10px 0px;
+  
+  }
+
+  .tarjeta {
+  width: 90%;
+  margin: auto;
+  gap: 10px;
+   
+  }
+
+  .carrusel1 img {
+    margin-right: 10px;
+    width: 100%;
+  }
+
+  .mapa {
+    width: 100% !important;
+    height: 180px !important;
+  }
+
+  .lineabaja {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .pie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 15px;
+    background-color: #4a188b;
+  }
+
+  .pies {
+   width: 15%;
+   display: flex;
+   flex-direction: column;
+   font-size: 10px;
+ 
+  }
+
+  .pies img {
+    width: 50%;
+  }
+.mapa{
+
+  width: 100% !important;
+  height: 150px !important;
+}
+
+
+  .ultimo {
+    flex-direction: column;
+    text-align: center;
+    background-color: #4a188b;
+  }
+
+  .ultimo p {
+    font-size: 13px;
+    padding: 5px 15px;
+    font-weight: bold;
+  }
+
+  .ultimo a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  .contenido1{
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    padding: 10px 10px !important;
+  }
+  .contenido3{
+    width: 100% !important;;
+    height: 100% !important;;
+  }
+  .formulario input {
+    width:90%!important;
+  }
+  .label1{
+        width: 90% !important;;
+  }
+}
+
+
+
