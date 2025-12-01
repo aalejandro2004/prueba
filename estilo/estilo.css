@@ -192,155 +192,44 @@ display: block;
   color: yellow;
 }
 
-/*QUERY 768px */
-@media (max-width: 768px) {
-  body {
-    background: #162066;
-    margin: 0;
-    padding: 0;
-  }
-
-  .todo {
-    width: 100%;
-  }
-
+/* TABLET - 1024px */
+@media (max-width: 1024px) {
   .cabecera {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 15px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    padding: 10px 20px;
     height: auto;
   }
 
   .cabeceraLeft {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    padding: 0;
-  }
-
-  .cabeceraLeft img {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-  }
-
-  .cabeceraRigth {
-    width: 60%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0;
+    padding: 15px 30px;
   }
 
   .menus {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding: 0;
-    justify-content: flex-end;
-    font-size: 14px;
-  }
-
-  .menus li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 8px;
-    text-align: center;
-  }
-
-  .menus li img {
-    width: 18px;
-    height: 18px;
-  }
-
-  .container {
-    flex-direction: column;
+    font-size: 20px;
+    gap: 12px;
   }
 
   .tarjeta_total {
-    flex-direction: column;
-    margin: 20px auto;
-    padding: 20px;
-    gap: 20px;
-    width: 90%;
+    margin: 30px 40px;
+    padding: 25px;
+    gap: 40px;
   }
 
   .tarjeta {
     width: 100%;
-    padding: 15px;
-  }
-  
-  .carrusel1 img {
-    margin-right: 0;
-    width: 100%;
-  }
-
-  .lineabaja {
-    width: 90%;
-    margin: 10px auto;
-  }
-
-  .ultimo p {
-    font-size: 14px;
-    padding: 10px 15px;
-  }
-
-  .pie {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    padding: 20px 15px;
-    text-align: center;
-  }
-
-  .pies {
-    width: 33%;
-  }
-
-  .pies img {
-    width: 80px;
-    max-width: 100%;
-  }
-
-  .contenido1 {  
-    padding: 15px 20px !important;   
-    display: flex;   
-    flex-direction: column;   
-    justify-items: center; 
-    gap: 12px;
-  }
-
-  .cajas {
-    font-size: 24px;
-  }
-
-  .mapa {
-    width: 100% !important;
-    height: 250px !important;
+    max-width: 400px;
   }
 }
 
-/* QUERY 480px */
-@media (max-width: 480px) {
+/* TABLET PEQUEÑA - 768px */
+@media (max-width: 768px) {
   body {
     background: #162066;
-    margin: 0;
-    padding: 0;
   }
 
   .cabecera {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 10px;
+    padding: 12px 20px;
     height: auto;
-    top: 0;
-    z-index: 100;
+    flex-wrap: nowrap;
   }
 
   .cabeceraLeft {
@@ -350,36 +239,24 @@ display: block;
 
   .cabeceraLeft img {
     width: 100%;
-    max-width: 80px;
+    max-width: 140px;
     height: auto;
   }
 
   .cabeceraRigth {
     width: 65%;
-    display: flex;
-    justify-content: flex-end;
+    padding: 0;
   }
 
   .menus {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    padding: 0;
-    font-size: 10px;
+    font-size: 16px;
+    gap: 15px;
+    padding: 0 10px;
   }
 
-  .menus li {
-    gap: 3px;
-  }
-
-  .menus img {
-    width: 12px !important;
-    max-width: 12px;
-    height: 12px;
-  }
-
-  .menus li a {
-    padding: 4px 6px;
+  .menus li img {
+    width: 20px;
+    height: 20px;
   }
 
   .container {
@@ -387,81 +264,216 @@ display: block;
   }
 
   .tarjeta_total {
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    margin: 15px auto;
-    padding: 15px 10px;
-    gap: 15px;
+    margin: 20px auto;
+    padding: 25px;
+    gap: 25px;
+    width: 90%;
   }
 
   .tarjeta {
-    width: 95%;
-    margin: auto;
-    padding: 15px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
   }
-
+  
   .carrusel1 img {
     margin-right: 0;
     width: 100%;
-  }
-
-  .mapa {
-    width: 100% !important;
-    height: 200px !important;
-  }
-
-  .lineabaja {
-    width: 90%;
-    margin: 10px auto;
+    height: auto;
   }
 
   .pie {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-    padding: 15px 10px;
-    background: #162066;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 20px;
   }
 
   .pies {
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    font-size: 9px;
+    width: 100%;
+    text-align: center;
   }
 
   .pies img {
     width: 100%;
-    max-width: 60px;
+    max-width: 150px;
     margin: 0 auto;
   }
 
-  .ultimo {
+  .contenido1 {  
+    padding: 20px !important;   
+    display: flex;   
+    flex-direction: column;   
+    gap: 15px;
+  }
+
+  .mapa {
+    width: 100% !important;
+    height: 300px !important;
+  }
+}
+
+/* MÓVIL GRANDE - 600px */
+@media (max-width: 600px) {
+  .cabecera {
+    padding: 10px 15px;
+  }
+
+  .cabeceraLeft {
+    width: 30%;
+  }
+
+  .cabeceraLeft img {
+    max-width: 100px;
+  }
+
+  .cabeceraRigth {
+    width: 70%;
+  }
+
+  .menus {
+    font-size: 13px;
+    gap: 10px;
+    padding: 0 5px;
+  }
+
+  .menus li img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .menus li a {
+    padding: 5px 8px;
+  }
+
+  .tarjeta_total {
+    margin: 15px auto;
+    padding: 20px 15px;
+    gap: 20px;
+    width: 95%;
+  }
+
+  .tarjeta {
+    padding: 18px;
+  }
+
+  .contenido h3 {
+    font-size: 15px;
+  }
+
+  .contenido p {
+    font-size: 13px;
+  }
+
+  .mapa {
+    width: 100% !important;
+    height: 250px !important;
+  }
+
+  .pie {
     flex-direction: column;
-    text-align: center;
-    background: #162066;
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .pies {
+    font-size: 12px;
+  }
+
+  .ultimo p {
+    font-size: 13px;
+  }
+}
+
+/* MÓVIL MEDIANO - 480px */
+@media (max-width: 480px) {
+  .cabecera {
+    padding: 8px 12px;
+  }
+
+  .cabeceraLeft {
+    width: 28%;
+  }
+
+  .cabeceraLeft img {
+    max-width: 85px;
+  }
+
+  .cabeceraRigth {
+    width: 72%;
+  }
+
+  .menus {
+    font-size: 11px;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .menus li {
+    gap: 4px;
+  }
+
+  .menus li img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .menus li a {
+    padding: 4px 6px;
+  }
+
+  .tarjeta_total {
+    margin: 15px auto;
+    padding: 15px 10px;
+    gap: 18px;
+    width: 96%;
+  }
+
+  .tarjeta {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .icono img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contenido h3 {
+    font-size: 14px;
+  }
+
+  .contenido p {
+    font-size: 12px;
+  }
+
+  .mapa {
+    width: 100% !important;
+    height: 220px !important;
+  }
+
+  .pie {
+    flex-direction: column;
+    padding: 18px 12px;
+    gap: 12px;
+  }
+
+  .pies {
+    font-size: 11px;
+    width: 100%;
+  }
+
+  .pies img {
+    max-width: 120px;
   }
 
   .ultimo p {
     font-size: 12px;
-    padding: 8px 15px;
-    font-weight: bold;
-  }
-
-  .ultimo a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+    padding: 8px 12px;
   }
 
   .contenido1 {
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100% !important;
-    padding: 10px !important;
+    padding: 12px !important;
   }
 
   .contenido3 {
@@ -470,11 +482,177 @@ display: block;
   }
 
   .formulario input {
-    width: 90% !important;
+    width: 92% !important;
   }
 
   .label1 {
-    width: 90% !important;
+    width: 92% !important;
+  }
+}
+
+/* MÓVIL PEQUEÑO - 375px */
+@media (max-width: 375px) {
+  .cabecera {
+    padding: 8px 10px;
+  }
+
+  .cabeceraLeft {
+    width: 25%;
+  }
+
+  .cabeceraLeft img {
+    max-width: 70px;
+  }
+
+  .cabeceraRigth {
+    width: 75%;
+  }
+
+  .menus {
+    font-size: 9px;
+    gap: 6px;
+  }
+
+  .menus li img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .menus li a {
+    padding: 3px 5px;
+  }
+
+  .tarjeta_total {
+    padding: 12px 8px;
+    gap: 15px;
+  }
+
+  .tarjeta {
+    padding: 12px;
+  }
+
+  .icono img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .contenido h3 {
+    font-size: 13px;
+  }
+
+  .contenido p {
+    font-size: 11px;
+  }
+
+  .mapa {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+  .pie {
+    padding: 15px 10px;
+    gap: 10px;
+  }
+
+  .pies {
+    font-size: 10px;
+  }
+
+  .pies img {
+    max-width: 100px;
+  }
+
+  .ultimo p {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
+
+/* MÓVIL MUY PEQUEÑO - 320px */
+@media (max-width: 320px) {
+  .cabecera {
+    padding: 6px 8px;
+  }
+
+  .cabeceraLeft {
+    width: 22%;
+  }
+
+  .cabeceraLeft img {
+    max-width: 60px;
+  }
+
+  .cabeceraRigth {
+    width: 78%;
+  }
+
+  .menus {
+    font-size: 8px;
+    gap: 5px;
+  }
+
+  .menus li img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .menus li a {
+    padding: 2px 4px;
+  }
+
+  .tarjeta_total {
+    padding: 10px 6px;
+    gap: 12px;
+    margin: 10px auto;
+  }
+
+  .tarjeta {
+    padding: 10px;
+  }
+
+  .icono img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .contenido h3 {
+    font-size: 12px;
+  }
+
+  .contenido p {
+    font-size: 10px;
+  }
+
+  .mapa {
+    width: 100% !important;
+    height: 180px !important;
+  }
+
+  .pie {
+    padding: 12px 8px;
+    gap: 8px;
+  }
+
+  .pies {
+    font-size: 9px;
+  }
+
+  .pies img {
+    max-width: 80px;
+  }
+
+  .ultimo p {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  .contenido1 {
+    padding: 8px !important;
+  }
+
+  .formulario input,
+  .label1 {
+    width: 95% !important;
   }
 }
 
